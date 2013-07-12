@@ -1,0 +1,33 @@
+---
+author: leoz
+comments: true
+date: 2006-09-06 10:57:32+00:00
+layout: post
+slug: '12'
+title: Writely
+wordpress_id: 12
+categories:
+- web20
+---
+
+Try WEB 2.0 editor!
+
+  
+  
+Why?  
+  
+
+
+  1. It's cool!  
+  2. It's free.  
+  3. It's possible to post to your own blog from it.
+
+  
+Get it here: [Writely](http://www.writely.com)
+
+![](http://www.writely.com/images/ExampleEditScreen.gif)
+
+  
+This blog post was made from Writely and later corrected with MS Windows Live Writer.
+
+P.S. I will not recommend it for everyday use. It has lots of problems and it's still beta quality.

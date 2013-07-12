@@ -1,0 +1,28 @@
+---
+author: leoz
+comments: true
+date: 2010-03-10 13:10:46+00:00
+layout: post
+slug: more-jobs
+title: More jobs...
+wordpress_id: 75
+categories:
+- hire
+- maemo
+tags:
+- browser
+- job
+- maemo
+---
+
+We are looking for an experienced software engineer and an architect  for the browser team:
+
+
+
+	
+  * [Architect](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=620886)
+
+	
+  * [Software engineer](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=620806)
+
+

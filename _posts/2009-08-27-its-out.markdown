@@ -1,0 +1,13 @@
+---
+author: leoz
+comments: true
+date: 2009-08-27 11:30:33+00:00
+layout: post
+slug: its-out
+title: It's out!
+wordpress_id: 57
+categories:
+- maemo
+---
+
+http://maemo.nokia.com
