@@ -44,9 +44,28 @@
     </ul>
   </div>
 
-  {{ content }}
+<div class="colmask threecol">
+	<div class="colmid">
+		<div class="colleft">
+			<div class="col1">
+				{{ content }}
+			</div>
+			<div class="col2">
+				{% include left_bar/archives.html %}
+				{% include left_bar/categories.html %}
+				{% include left_bar/social.html %}
+				{% include left_bar/links.html %}
+			</div>
+			<div class="col3">
+				{% include right_bar/stats.html %}
+				{% include right_bar/tags.html %}
+				{% include right_bar/recent_posts.html %}
+			</div>
+		</div>
+	</div>
+</div>
   
-  <div id="footer">
+  <div class="footer">
   	<address>
   		<div class="copyright">
   			Copyright © 2004-2013 <a href="http://blog.leoz.info/">{{ site.author.name }}</a> | Some Rights Reserved
