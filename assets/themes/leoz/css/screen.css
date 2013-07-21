@@ -58,12 +58,6 @@ hr {
 
 sup { line-height: 1ex; }
 
-#site {
-	max-width: 74%;
-	margin: 1.5em auto 3em auto;
-	line-height:1.5em;
-}
-
 #page, #disqus_thread {
 	padding: 0em 0em 1.5em 0em;
 }

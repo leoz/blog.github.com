@@ -11,6 +11,17 @@
 
 /******************************************************************************/
 /*
+* Site.
+*/
+
+#site {
+	max-width: 75%;
+	margin: 1.5em auto 3em auto;
+	line-height:1.5em;
+}
+
+/******************************************************************************/
+/*
 * Header.
 */
 
@@ -20,10 +31,14 @@
 #header:hover a:hover { text-decoration: none; }
 #header a:hover .hover { color: silver; }
 #header {
+	width:100%;			/* width of page */
 	position: relative;
 	line-height: 1em;
 	margin-top: .5em;
-	margin-bottom: .5em;
+
+	border: solid 3px rgb(190,190,190);
+	border-top-left-radius: 26px;
+	border-top-right-radius: 26px;
 }
 #header h1 {
 	margin-bottom: 0;
@@ -33,13 +48,14 @@
 }
 
 #header ul {
-	position: absolute;
+	position: relative;
+	float: right;
 	top: 0;
 	right: 0;
 	font-size: 100%;
 	line-height: 1.6em;
 	display: block;
-	margin: 0;
+	margin-top: -1.8em;
 	width: 50%;
 	text-align: right;
 }
@@ -53,12 +69,22 @@
 	border-bottom: 2px solid blue;
 }
 #header .byline {
+	margin-top: .2em;
 	color: silver;
 	font-size: 10pt;
 	line-height: 75%
 }
 #header:hover .byline a { color: silver; text-shadow: none; }
 #header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
+
+/******************************************************************************/
+/*
+* Header Box.
+*/
+
+#header-box {
+	margin: 1.5em 1.5em 1.5em 1.5em;
+}
 
 /******************************************************************************/
 /*
@@ -94,6 +120,8 @@
 /* 3 Column settings */
 .threecol {
 	background:#fff;		/* right column background colour */
+	border-left: solid 3px rgb(190,190,190);
+	border-right: solid 3px rgb(190,190,190);
 }
 .threecol .colmid {
 	right:23%;			/* (21 + 1 + 1) width of the right column */
@@ -126,8 +154,11 @@
 	clear:both;
 	float:left;
 	width:100%;
-	border-top:1px solid #000;
+
+	border: solid 3px rgb(190,190,190);
+
 	margin-top: 0;
+	margin-bottom: 1em;
 	padding-bottom: 3em;
 	color: grey;
 	font-size: 87.5%;
@@ -213,6 +244,18 @@
 
 .bar-box h4.blue {
 	background-color: rgb(137,170,214);
+	color: rgb(255,255,255);
+}
+
+/* Blue 2 */
+
+.bar-box.blue2 {
+	border: solid 1px rgb(143,171,173);
+	background-color: rgb(184,226,230);
+}
+
+.bar-box h4.blue2 {
+	background-color: rgb(143,171,173);
 	color: rgb(255,255,255);
 }
 
