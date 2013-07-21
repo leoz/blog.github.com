@@ -1,5 +1,6 @@
-<div class="bar-box">
-	<h4>Archives</h4>
+<div class="bar-box grey">
+	<h4 class="grey">Archives</h4>
+	<div class="inner-box">
 	<ul>
 	{% for post in site.posts %}
 		{% unless post.next %}
@@ -15,4 +16,5 @@
 		{% endunless %}	
 	{% endfor %}
 	</ul>
+	</div>
 </div>

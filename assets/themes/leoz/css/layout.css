@@ -1,0 +1,243 @@
+/*
+* layout.css
+*
+* Three column layout and mods to the default theme
+*
+* Copyright 2013 Leonid Zolotarev
+* Released under the BSD license.
+* http://leoz.net/license
+*
+*/
+
+/******************************************************************************/
+/*
+* Header.
+*/
+
+#header, #header a { color: silver; }
+#header .hover { color: transparent; }
+#header:hover a { color: black; text-shadow: #aaa 2px 2px 3px;}
+#header:hover a:hover { text-decoration: none; }
+#header a:hover .hover { color: silver; }
+#header {
+	position: relative;
+	line-height: 1em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+#header h1 {
+	margin-bottom: 0;
+	line-height: 0.9em;
+	display: block;
+	font-weight: normal;
+}
+
+#header ul {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 100%;
+	line-height: 1.6em;
+	display: block;
+	margin: 0;
+	width: 50%;
+	text-align: right;
+}
+#header ul li { display: inline; }
+#header ul li a {
+	padding: 0.4em 0.3em 0 0.3em;
+	display: inline;
+}
+#header ul li a:hover {
+	color: blue;
+	border-bottom: 2px solid blue;
+}
+#header .byline {
+	color: silver;
+	font-size: 10pt;
+	line-height: 75%
+}
+#header:hover .byline a { color: silver; text-shadow: none; }
+#header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
+
+/******************************************************************************/
+/*
+* Three column layout.
+* Taken from http://matthewjamestaylor.com/blog
+*/
+
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#fff;		/* right column background colour */
+}
+.threecol .colmid {
+	right:23%;			/* (21 + 1 + 1) width of the right column */
+	background:#fff;		/* center column background colour */
+}
+.threecol .colleft {
+	right:54%;			/* (52 + 1 + 1) width of the middle column */
+	background:#fff;	/* left column background colour */
+}
+.threecol .col1 {
+	width:52%;			/* (52) width of center column content (column width minus padding on either side) */
+	left:101%;			/* (100 + 1) 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:21%;			/* (21) Width of left column content (column width minus padding on either side) */
+	left:26%;			/* (21 + 2 + 2 + 1) width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:21%;			/* (21) Width of right column content (column width minus padding on either side) */
+	left:82%;			/* (100 - 21 + 1 + 1 + 1) Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+/******************************************************************************/
+/*
+* Footer.
+*/
+
+.footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+	margin-top: 0;
+	padding-bottom: 3em;
+	color: grey;
+	font-size: 87.5%;
+	line-height: 1.3em;
+}
+.footer address {
+	position: relative;
+	margin: .5em 0 0 0;
+	text-align: right;
+}
+.footer a {
+	font-variant: small-caps;
+	font-style: normal;
+	color: #77d;
+	text-decoration: none;
+}
+.footer .copyright {
+	position: absolute;
+	left: 0;
+	text-align: left;
+	display: block;
+}
+.footer .engine {
+	position: absolute;
+	text-align: right;
+	display: block;
+	right: 0;
+}
+
+/******************************************************************************/
+/*
+* Side boxes.
+*/
+
+.bar-box {
+	margin: 1em 0 0.5em 0;
+	border: solid 1px;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.bar-box h4 {
+	margin: 0 0 5px 0;
+	padding: 4px 10px 3px 10px;
+	font-family: "trebuchet ms",verdana,arial,sans-serif;
+	font-weight: bold;
+	font-size: 140%;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.bar-box div.inner-box {
+	margin: 0 10px 5px 10px;
+	color: rgb(80,80,80);
+/*	background: yellow; */
+	font-size: 110%;
+}
+
+.bar-box div.inner-box ul {
+	margin: 0 0 0 0;
+}
+
+/* Grey */
+
+.bar-box.grey {
+	border: solid 1px rgb(190,190,190);
+	background: rgb(235,235,235);
+}
+
+.bar-box h4.grey {
+	background-color: rgb(190,190,190);
+	color: rgb(255,255,255);
+}
+
+/* Blue */
+
+.bar-box.blue {
+	border: solid 1px rgb(137,170,214);
+	background-color: rgb(213,225,240);
+}
+
+.bar-box h4.blue {
+	background-color: rgb(137,170,214);
+	color: rgb(255,255,255);
+}
+
+/* Orange */
+
+.bar-box.orange {
+	border: solid 1px rgb(232,177,13);
+	background-color: rgb(248,224,150);
+}
+
+.bar-box h4.orange {
+	background-color: rgb(232,177,13);
+	color: rgb(255,255,255);
+}
+
+/* Green */
+
+.bar-box.green {
+	border: solid 1px rgb(160,214,81);
+	background-color: rgb(217,239,185);
+}
+
+.bar-box h4.green {
+	background-color: rgb(160,214,81);
+	color: rgb(255,255,255);
+}
+
+/******************************************************************************/
