@@ -42,6 +42,7 @@
 }
 #header h1 {
 	margin-bottom: 0;
+	margin-left: 2.6em;
 	line-height: 0.9em;
 	display: block;
 	font-weight: normal;
@@ -68,6 +69,11 @@
 	color: blue;
 	border-bottom: 2px solid blue;
 }
+
+/*
+* Site tag line.
+*/
+
 #header .byline {
 	margin-top: .2em;
 	color: silver;
@@ -76,6 +82,18 @@
 }
 #header:hover .byline a { color: silver; text-shadow: none; }
 #header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
+
+/*
+* Site logo.
+*/
+
+.sitelogo {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	z-index: 1;
+	background: url(/images/leoz.gif);
+}
 
 /******************************************************************************/
 /*
