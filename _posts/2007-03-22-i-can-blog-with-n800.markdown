@@ -16,7 +16,11 @@ I'm using Maemo Blog application for it. The program is still beta-alike. It is 
 
 Here is my current N800 desktop:
 
-![Nokia N800](http://leoz.org/blog/wp-content/uploads/2007/03/n800-screenshot-01.png)
+<p>
+<a class="fancybox" href="/uploads/2007/03/n800-screenshot-01.png" title="Nokia N800">
+	<img src="/uploads/2007/03/n800-screenshot-01.png" alt="Nokia N800" height="195" width="320">
+</a>
+</p>
 
 I've created this post with Maemo Blog.
 Mostly ;-)

@@ -14,4 +14,8 @@ Try another WEB 2.0 toy: [YouOS](https://www.youos.com/).
 
 It's a complete OS inside a browser window!
 
-[![YouOS](http://leoz.org/blog/wp-content/uploads/2006/09/youos.thumbnail.jpg)](http://leoz.org/blog/wp-content/uploads/2006/09/youos.jpg)
+<p>
+<a class="fancybox" href="/uploads/2006/09/youos.jpg" title="YouOS">
+	<img src="/uploads/2006/09/youos.jpg" alt="YouOS" height="195" width="320">
+</a>
+</p>

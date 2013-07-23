@@ -18,8 +18,17 @@ The second public release has also support for Google Spreadsheets.
 
 This is how it was in the 1st release:
 
-[![google microb 200707](http://leoz.net/wordpress/wp-content/uploads/2007/08/google_microb_200707.png)](http://leoz.net/wordpress/wp-content/uploads/2007/08/google_microb_200707.png)
+<p>
+<a class="fancybox" href="/uploads/2007/08/google_microb_200707.png" title="google microb 200707">
+	<img src="/uploads/2007/08/google_microb_200707.png" alt="google microb 200707" height="195" width="320">
+</a>
+</p>
 
 Now it looks much better:
 
-[![google microb 200708](http://leoz.net/wordpress/wp-content/uploads/2007/08/google_microb_200708.png)](http://leoz.net/wordpress/wp-content/uploads/2007/08/google_microb_200708.png)
+<p>
+<a class="fancybox" href="/uploads/2007/08/google_microb_200708.png" title="google microb 200708">
+	<img src="/uploads/2007/08/google_microb_200708.png" alt="google microb 200708" height="195" width="320">
+</a>
+</p>
+
