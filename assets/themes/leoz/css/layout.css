@@ -174,36 +174,36 @@
 	width:100%;
 
 	border: solid 3px rgb(190,190,190);
+	color: rgb(125,125,125);
+	background: rgb(225,225,225);
 
 	margin-top: 0;
 	margin-bottom: 1em;
-	padding-bottom: 3em;
-	color: grey;
-	font-size: 87.5%;
+	padding-bottom: 0.5em;
 	line-height: 1.3em;
 }
+
 .footer address {
+	font-style: normal;
+	font-size: 87.5%;
+ 
 	position: relative;
 	margin: .5em 0 0 0;
-	text-align: right;
+	text-align: center;
 }
+
 .footer a {
-	font-variant: small-caps;
-	font-style: normal;
-	color: #77d;
+	text-decoration: underline;
+	color: rgb(125,125,125);
+}
+
+.footer a:hover {
 	text-decoration: none;
+	color: rgb(0,0,0);
 }
-.footer .copyright {
-	position: absolute;
-	left: 0;
-	text-align: left;
-	display: block;
-}
-.footer .engine {
-	position: absolute;
-	text-align: right;
-	display: block;
-	right: 0;
+
+.footer a:visited {
+	color: rgb(0,0,0);
 }
 
 /******************************************************************************/
