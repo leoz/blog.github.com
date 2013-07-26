@@ -25,22 +25,31 @@
 * Header.
 */
 
-#header, #header a { color: silver; }
-#header .hover { color: transparent; }
-#header:hover a { color: black; text-shadow: #aaa 2px 2px 3px;}
-#header:hover a:hover { text-decoration: none; }
-#header a:hover .hover { color: silver; }
-#header {
+.header {
 	width:100%;			/* width of page */
 	position: relative;
 	line-height: 1em;
 	margin-top: .5em;
 
+	color: rgb(125,125,125);
+	background: rgb(235,235,235);
+
 	border: solid 3px rgb(190,190,190);
 	border-top-left-radius: 26px;
 	border-top-right-radius: 26px;
 }
-#header h1 {
+
+.header a {
+	text-decoration: none;
+	color: rgb(125,125,125);
+}
+
+.header a:hover {
+	text-decoration: underline;
+	color: rgb(0,0,0);
+}
+
+.header h1 {
 	margin-bottom: 0;
 	margin-left: 2.6em;
 	line-height: 0.9em;
@@ -48,7 +57,7 @@
 	font-weight: normal;
 }
 
-#header ul {
+.header ul {
 	position: relative;
 	float: right;
 	top: 0;
@@ -60,29 +69,42 @@
 	width: 50%;
 	text-align: right;
 }
-#header ul li { display: inline; }
-#header ul li a {
+.header ul li { display: inline; }
+.header ul li a {
 	padding: 0.4em 0.3em 0 0.3em;
 	display: inline;
 }
-#header ul li a:hover {
-	color: blue;
-	border-bottom: 2px solid blue;
+
+.header .sitename {
+	font-size: 110%;
 }
 
+/******************************************************************************/
 /*
 * Site tag line.
 */
 
-#header .byline {
+.header .byline {
 	margin-top: .2em;
-	color: silver;
 	font-size: 10pt;
 	line-height: 75%
 }
-#header:hover .byline a { color: silver; text-shadow: none; }
-#header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
 
+.header:hover .byline a {
+	text-decoration: none;
+	color: rgb(125,125,125);
+}
+
+.header:hover .byline a:hover {
+	text-decoration: underline;
+	color: rgb(0,0,0);
+}
+
+.header:hover .byline a:visited {
+	color: rgb(0,0,0);
+}
+
+/******************************************************************************/
 /*
 * Site logo.
 */
@@ -102,6 +124,8 @@
 
 #header-box {
 	margin: 1.5em 1.5em 1.5em 1.5em;
+	font-style: normal;
+	font-size: 120%;
 }
 
 /******************************************************************************/
@@ -175,7 +199,7 @@
 
 	border: solid 3px rgb(190,190,190);
 	color: rgb(125,125,125);
-	background: rgb(225,225,225);
+	background: rgb(235,235,235);
 
 	margin-top: 0;
 	margin-bottom: 1em;
