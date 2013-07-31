@@ -332,7 +332,7 @@
 
 .nav-box ul li {
 	list-style-type: none;
-	background: rgb(235,235,235);
+	background: rgb(245,245,245);
 }
 
 .nav-box li a, .nav-box li a:visited {
@@ -350,6 +350,16 @@
 	color:rgb(42,90,138);
 	text-decoration:none;
 }
+
+/******************************************************************************/
+/*
+* Tag count.
+*/
+
+.tag-count.right {
+	float: right;
+}
+
 
 /******************************************************************************/
 /*

@@ -1,12 +1,12 @@
-<div class="bar-box blue2">
+<div class="bar-box grey">
 	<h4>Categories</h4>
-	<div class="inner-box blue2">
+	<div class="nav-box">
 	<ul>
 	{% for cat in site.categories %}
 	<li>
 		<a href="/categories.html#{{ cat[0] }}-ref">
 		<span class="badge">{{ cat[0] }}
-			<span class="tag-count"> {{ cat[1] | size }}</span>
+			<span class="tag-count right"> {{ cat[1] | size }}</span>
 		</span>
 		</a>
 		<span> </span>
