@@ -322,6 +322,37 @@
 
 /******************************************************************************/
 /*
+* Navigation box.
+*/
+
+.nav-box ul {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.nav-box ul li {
+	list-style-type: none;
+	background: rgb(235,235,235);
+}
+
+.nav-box li a, .nav-box li a:visited {
+	display:block;
+	line-height:2.0em;
+	padding:0px 10px 0px 20px;
+	border-top: solid 1px rgb(200,200,200);
+	text-decoration:none;
+	color:rgb(70,122,167);
+	font-weight:bold;
+}
+
+.nav-box li a:hover {
+	background-color:rgb(225,225,225);
+	color:rgb(42,90,138);
+	text-decoration:none;
+}
+
+/******************************************************************************/
+/*
 * Entry.
 */
 
