@@ -35,6 +35,9 @@ Results:
   3. MS IE 7 - **958ms**  
   4. FF 3.0 - **1386ms**  
   5. Flock 0.7 - **2379ms**
+
+<br/>
+
   * Tests were made several times for every browser but the average result is about the one above.
 
 Resume:
@@ -50,4 +53,4 @@ Browser notes:
 
 **Update 2006.09.05 16:27:**
 
-Iâ€™ve made a bug report for Mozilla regarding this issue: [Bug # 351406](https://bugzilla.mozilla.org/show_bug.cgi?id=351406)
+I've made a bug report for Mozilla regarding this issue: [Bug # 351406](https://bugzilla.mozilla.org/show_bug.cgi?id=351406)

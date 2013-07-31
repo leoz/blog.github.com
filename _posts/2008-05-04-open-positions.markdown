@@ -15,12 +15,12 @@ We are looking for talented and self motivated software developers, architects a
 
 
 	
-  * **[Browser Technology Specialist-HEL000000SU](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=322221)**
+  * [Browser Technology Specialist-HEL000000SU](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=322221)
 
 	
-  * **[Browser Architect/Technical Lead-HEL000000ST](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=322201)**
+  * [Browser Architect/Technical Lead-HEL000000ST](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=322201)
 
 	
-  * **[Technical Project Manager-HEL000000SS](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=322181)**
+  * [Technical Project Manager-HEL000000SS](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=322181)
 
 

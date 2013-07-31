@@ -14,11 +14,19 @@ On essence of the new technology marketing is, certainly, a logo.
 
 I've recently discovered that these two recent buzzwords, WEB 2.0 and AJAX, have own logos already.
 
-![](http://ajax.org/_images/ajax-logo.jpg)
+<p>
+<a class="fancybox" href="/uploads/2006/09/ajax.png" title="AJAX">
+	<img src="/uploads/2006/09/ajax.png" alt="AJAX" height="200" width="400">
+</a>
+</p>
 
 from [AJAX.org](http://ajax.org)
 
-![](http://upload.wikimedia.org/wikipedia/commons/9/93/Web_2.0_style_example.png)
+<p>
+<a class="fancybox" href="/uploads/2006/09/Web_2_0.png" title="WEB 2.0">
+	<img src="/uploads/2006/09/Web_2_0.png" alt="WEB 2.0" height="200" width="400">
+</a>
+</p>
 
 from [Wiki](http://en.wikipedia.org/wiki/Web_2)
 
