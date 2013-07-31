@@ -16,4 +16,28 @@ $(document).ready(function() {
 			media : {}
 		}
 	});
+
+	set_emoticons();
 });
+
+/*
+* Functions
+*/
+
+function set_emoticons() {
+	var definition = {
+		smile: {
+			title: "Smile",
+			codes: [":)",":=)",":-)"]
+		},
+		wink: {
+			title: "Wink",
+			codes: [";)",";-)"]
+		}
+	};
+
+	$.emoticons.define(definition);
+
+	$('#page').html($.emoticons.replace($('#page').html()));
+}
+
