@@ -54,7 +54,6 @@
 	margin-left: 2.6em;
 	line-height: 0.9em;
 	display: block;
-	font-weight: normal;
 }
 
 .header ul {
@@ -76,7 +75,9 @@
 }
 
 .header .sitename {
-	font-size: 110%;
+	font-size: 120%;
+	font-weight: bold;
+	font-family:"trebuchet ms",arial,sans-serif;
 }
 
 /******************************************************************************/
@@ -124,7 +125,6 @@
 
 #header-box {
 	margin: 1.5em 1.5em 1.5em 1.5em;
-	font-style: normal;
 	font-size: 120%;
 }
 
