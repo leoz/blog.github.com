@@ -10,6 +10,6 @@ categories:
 - misc
 ---
 
-I've wrote a page about the projects I've been participating: [http://leoz.info/projects.html](http://leoz.info/projects.html)
+I've wrote a page about the projects I've been participating: [http://leoz.net/projects.html](http://leoz.net/projects.html)
 
 I'm going to put more stuff on it as soon as I'd be able to recall ;-)
