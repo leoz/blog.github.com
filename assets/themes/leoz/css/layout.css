@@ -388,6 +388,14 @@
 	margin: 0 0 20px 0;
 }
 
+.entry-date {
+	margin: 0 0 0.5em 0;
+	font-family: "trebuchet ms",arial,sans-serif;
+	color: rgb(125,125,125);
+	font-weight: normal;
+	font-size: 110%;
+}
+
 /******************************************************************************/
 /*
 * Pagination.
