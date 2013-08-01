@@ -122,7 +122,6 @@ JB :
 ### Pagination
 
 paginate: 10
-paginate_path : /page:num
 
 ### Sitemap
 
