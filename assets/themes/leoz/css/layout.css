@@ -44,7 +44,7 @@
 	color: rgb(125,125,125);
 }
 
-.header a:hover {
+.nav a:hover {
 	text-decoration: underline;
 	color: rgb(0,0,0);
 }
@@ -245,6 +245,11 @@
 	color: rgb(80,80,80);
 }
 
+.bar-box a, .bar-box a:visited {
+	color:rgb(70,122,167);
+	font-weight:bold;
+}
+
 .bar-box h4 {
 	margin: 0 0 0 0;
 	padding: 4px 10px 3px 10px;
@@ -384,4 +389,66 @@
 }
 
 /******************************************************************************/
+/*
+* Pagination.
+*/
+ 
+.pagination {
+	height: 36px;
+	text-align: center;
+}
+ 
+.pagination ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+ 
+.pagination li {
+  display: inline;
+}
+ 
+.pagination li:first-child a {
+  border-left-width: 1px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+ 
+.pagination li:last-child a {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+ 
+.pagination a {
+  float: left;
+  padding: 0 14px;
+  line-height: 34px;
+  border: 1px solid #DDD;
+  border-left-width: 0;
+}
+ 
+.pagination a:hover, .active a {
+  background-color: whiteSmoke;
+}
+ 
+.disabled a, .disabled a:hover,
+.active a, .active a:hover {
+  color: #999;
+  cursor: default;
+}
+ 
+.disabled a:hover {
+  background-color: transparent;
+}
+
+/******************************************************************************/
+
 
