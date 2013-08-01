@@ -268,7 +268,10 @@
 
 .inner-box ul {
 	margin: 0 0 0 0;
-	line-height: 1.5em;
+}
+
+.entry-content ul li p {
+	margin: 0 0 0 0;
 }
 
 /* Grey */
