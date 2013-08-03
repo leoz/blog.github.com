@@ -329,6 +329,17 @@
 	background: rgb(217,239,185);
 }
 
+/* Green 2 */
+
+.bar-box.green2 {
+	border: solid 1px rgb(70,167,115);
+	background: rgb(70,167,115);
+}
+
+.inner-box.green2 {
+	background: rgb(215,238,226);
+}
+
 /******************************************************************************/
 /*
 * Navigation box.
@@ -469,6 +480,49 @@
 .entry-content a img {
 	padding: 5px;
 	border: 1px solid #BBB;
+}
+
+/******************************************************************************/
+/*
+* Social icons.
+*/
+
+ul.social-icons {
+	font-size: 210%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: -0.1em;
+	overflow: hidden;
+	text-align: center;
+}
+
+ul.social-icons li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: -0.1em;
+	display: inline-block;
+}
+
+ul.social-icons li a i{
+	float: left;
+
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+	
+	height: 27px;
+}
+
+ul.social-icons li:hover a i{
+	color: rgb(167,70,122);
+	transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
 }
 
 /******************************************************************************/

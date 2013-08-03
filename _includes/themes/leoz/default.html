@@ -35,6 +35,9 @@
 	<!-- emoticons CSS -->
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/ext/emoticons.css" type="text/css"/>
 
+	<!-- Elusive-Icons Webfont CSS -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/ext/elusive-webfont.css" type="text/css"/>
+
 	<!-- jQuery library -->
 	<script type="text/javascript" src="{{ ASSET_PATH }}/js/lib/jquery-1.10.2.js"></script>
 
@@ -76,15 +79,15 @@
 				{{ content }}
 			</div>
 			<div class="col2">
-				{% include left_bar/archives.html %}
-				{% include left_bar/categories.html %}
-				{% include left_bar/social.html %}
-				{% include left_bar/links.html %}
+				{% include side_bar/categories.html %}
+				{% include side_bar/archives.html %}
+				{% include side_bar/stats.html %}
+				{% include side_bar/links.html %}
 			</div>
 			<div class="col3">
-				{% include right_bar/stats.html %}
-				{% include right_bar/tags.html %}
-				{% include right_bar/recent_posts.html %}
+				{% include side_bar/social.html %}
+				{% include side_bar/tags.html %}
+				{% include side_bar/recent_posts.html %}
 			</div>
 		</div>
 	</div>
