@@ -263,18 +263,13 @@ p.excerpt { margin: 0; }
 /* @group Code */
 pre {
 	margin: 1em 0 1.5em 0;
-	font-size: 0.75em; /* Hack to make code look same size as body font */  
+	font-size: 0.85em; /* Hack to make code look same size as body font */  
 	line-height: 1.5em;	
 	color: #111;
 	background: #fffff0;
 	border: 1px solid #ddc;
 	padding: 0.5em 1em;
 	overflow: hidden;
-
-	/* Experimental CSS3 stuff */
-	box-shadow: 1px 1px 6px #ccc;
-	-webkit-box-shadow: 1px 1px 6px #ccc;
-	-moz-box-shadow: 1px 1px 6px #ccc;
 }
 pre:hover {
 	border-right: none;
