@@ -28,6 +28,8 @@ Browsers:
   * Opera 9.01  
   * Swift 0.1, WebKit for WIN32
 
+<!--break-->
+
 Results:
 
   1. Opera 9 - **668ms**  

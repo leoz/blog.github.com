@@ -15,6 +15,8 @@ categories:
 
 I've installed the 4.0 Beta Release of maemo CJK on OSSO 1.0 with the latest version of [the Mozilla based browser for maemo](http://browser.garage.maemo.org/).
 
+<!--break-->
+
 Here are the results:
 
 

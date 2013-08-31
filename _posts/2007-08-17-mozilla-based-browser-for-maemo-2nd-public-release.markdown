@@ -16,6 +16,8 @@ It is much more stable and has many big fixes for annoying bugs from the previou
 
 The second public release has also support for Google Spreadsheets.
 
+<!--break-->
+
 This is how it was in the 1st release:
 
 <p>

@@ -22,6 +22,8 @@ categories:
 <p><span style="font-weight: bold"><font style="font-weight: bold; color: rgb(51,204,255)" size="4"><span style="font-family: verdana">
 <p></span></font></span><font style="font-weight: bold; color: rgb(51,204,255); font-family: verdana" size="4"><font size="5">Get it here: </font></font><font style="font-weight: bold; font-family: verdana" size="5"><span style="color: rgb(51,204,255)"></span><a title="writely editor" style="color: rgb(51,204,255)" href="http://www.writely.com">Writely</a></font> </p>
 
+<!--break-->
+
 <p>
 <a class="fancybox" href="/uploads/2006/09/Writely.jpg" title="Writely">
 	<img src="/uploads/2006/09/Writely.jpg" alt="Writely" height="195" width="320">

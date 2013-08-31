@@ -20,6 +20,8 @@ I've recently discovered that these two recent buzzwords, WEB 2.0 and AJAX, have
 </a>
 </p>
 
+<!--break-->
+
 from [AJAX.org](http://ajax.org)
 
 <p>

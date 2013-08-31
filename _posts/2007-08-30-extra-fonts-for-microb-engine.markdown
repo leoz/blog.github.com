@@ -22,6 +22,7 @@ I was able to get Arabic and Chinese fonts rendering with MicroB engine.
 	
   3. Reboot the device
 
+<!--break-->
 
 See some screen shots below...
 
