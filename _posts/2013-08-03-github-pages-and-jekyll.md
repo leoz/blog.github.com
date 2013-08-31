@@ -17,6 +17,8 @@ I took Jekyll-Bootstrap as a starting point, migrated all of my old WordPress bl
 Jekyll on GitHub Pages does not support plug-ins due to security reasons. So there is no way to use all that fancy stuff made with Ruby.
 But there are plenty of other ways to enhance the blog with e.g. jQuery and CSS. 
 
+<!--break-->
+
 Here are some links of interest:
 
   * [GitHub Pages](http://pages.github.com/)

@@ -417,6 +417,15 @@
 	font-size: 87.5%;
 }
 
+.entry-read-more {
+	font-weight: bold;
+	font-size: 87.5%;
+}
+
+a.entry-read-more {
+	color: rgb(214,135,81);
+}
+
 /******************************************************************************/
 /*
 * Pagination.

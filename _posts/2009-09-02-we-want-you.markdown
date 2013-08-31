@@ -32,6 +32,7 @@ We are looking for talented and dedicated software specialists to join the [Maem
 	
   * [Browser Integration Engineer - ITÄ00000010](http://nokia.taleo.net/careersection/10120/jobdetail.ftl?lang=en&job=520645)
 
+<!--break-->
 
 Watch here what we do:
 
