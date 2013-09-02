@@ -6,6 +6,8 @@ layout: post
 slug: isis-project-is-live
 title: Isis Project is live!
 wordpress_id: 81
+category: webkit
+tags: [webos, isis, webkit]
 ---
 
 It's been a long time since I posted anything here. The reason for that is that I was actually quite busy working. Working on something that I could not really discuss here. But now the situation has changed. The project I'm working on is an integral part of HP webOS platform. And this platform is being open sourced now. So I can finally talk about it in my blog :)
