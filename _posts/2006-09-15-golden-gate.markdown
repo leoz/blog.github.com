@@ -6,8 +6,8 @@ layout: post
 slug: golden-gate
 title: Golden Gate
 wordpress_id: 18
-categories:
-- usa
+category: places
+tags: [places, photo, usa]
 ---
 
 Some pictures from San Francisco:

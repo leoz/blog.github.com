@@ -6,8 +6,8 @@ layout: post
 slug: london-calling
 title: London calling...
 wordpress_id: 17
-categories:
-- misc
+category: places
+tags: [places, photo]
 ---
 
 The first thing I saw when I've entered Heathrow airport was this huge sign:

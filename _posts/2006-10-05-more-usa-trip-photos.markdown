@@ -6,8 +6,8 @@ layout: post
 slug: more-usa-trip-photos
 title: More USA trip photos...
 wordpress_id: 19
-categories:
-- usa
+category: places
+tags: [places, photo, usa]
 ---
 
 This is a full set of photos I've made during this trip to California:

@@ -6,8 +6,7 @@ layout: post
 slug: crash-your-opera
 title: Crash your Opera
 wordpress_id: 21
-categories:
-- misc
+category: misc
 ---
 
 Crash your Opera browser here: [http://sarissa.sourceforge.net/doc/test/testsarissa.html](http://sarissa.sourceforge.net/doc/test/testsarissa.html)
