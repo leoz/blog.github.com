@@ -16,16 +16,50 @@ They may serve as a good starting point for a mobile web application or just as 
 
 Enjoy!
 
+<b>UPDATED - 04/01/2014</b>
+
 <!--break-->
 
 <table align="center" border="0" cellpadding="10" cellspacing="10">
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-rss-feed-complex/index.html"
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-dynamic/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
+</td>
+</tr>
+<tr>
+<td class="photo-name">10. JQM Multi Page with dynamic page creation</td>
+</tr>
+</tbody>
+</table>
+
+<table align="center" border="0" cellpadding="10" cellspacing="10">
+<tbody>
+<tr>
+<td>
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-rss-feed-more-complex/index.html"
+    width="320" height="480">
+    </object>
+</td>
+</tr>
+<tr>
+<td class="photo-name">9. JQM RSS Feed with collapsible posts</td>
+</tr>
+</tbody>
+</table>
+
+<table align="center" border="0" cellpadding="10" cellspacing="10">
+<tbody>
+<tr>
+<td>
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-rss-feed-complex/index.html"
+    width="320" height="480">
+    </object>
 </td>
 </tr>
 <tr>
@@ -38,10 +72,10 @@ Enjoy!
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-rss-feed/index.html"
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-rss-feed/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
 </td> 
 </tr>
 <tr>
@@ -54,10 +88,10 @@ Enjoy!
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://rawgithub.com/leoz2011/web-app-examples/master/jqm-login-page/index.html"
+    <object
+    data="http://rawgithub.com/leoz2011/web-app-examples/master/jqm-login-page/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
 </td>
 </tr>
 <tr>
@@ -70,10 +104,10 @@ Enjoy!
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://rawgithub.com/leoz2011/web-app-examples/master/jqm-multi-page-more-complex/index.html"
+    <object
+    data="http://rawgithub.com/leoz2011/web-app-examples/master/jqm-multi-page-more-complex/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
 </td> 
 </tr>
 <tr>
@@ -86,10 +120,10 @@ Enjoy!
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-complex/index.html"
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-complex/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
 </td>
 </tr>
 <tr>
@@ -102,10 +136,10 @@ Enjoy!
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-nav/index.html"
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page-nav/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
 </td> 
 </tr>
 <tr>
@@ -118,10 +152,10 @@ Enjoy!
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page/index.html"
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-multi-page/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
 </td>
 </tr>
 <tr>
@@ -134,10 +168,10 @@ Enjoy!
 <tbody>
 <tr>
 <td>
-    <iframe
-    src="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-one-page/index.html"
+    <object
+    data="http://htmlpreview.github.com/?https://github.com/leoz2011/web-app-examples/blob/master/jqm-one-page/index.html"
     width="320" height="480">
-    </iframe>
+    </object>
 </td> 
 </tr>
 <tr>
