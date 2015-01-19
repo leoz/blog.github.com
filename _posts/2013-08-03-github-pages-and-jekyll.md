@@ -15,7 +15,7 @@ I migrated my blog to GitHub Pages and Jekyll from WordPress and PHP.
 Jekyll is a static site building system. GitHub supports it by default.
 I took Jekyll-Bootstrap as a starting point, migrated all of my old WordPress blog entries and made some final touch with CSS and JavaScript.
 Jekyll on GitHub Pages does not support plug-ins due to security reasons. So there is no way to use all that fancy stuff made with Ruby.
-But there are plenty of other ways to enhance the blog with e.g. jQuery and CSS. 
+But there are plenty of other ways to enhance the blog with e.g. jQuery and CSS.
 
 <!--break-->
 
@@ -42,5 +42,4 @@ I also use the following extra goodies:
 
 Fork my blog here:
 
-  * [LeoZ BloG on GitHub](https://github.com/leoz2011/blog.github.com)
-
+  * [LeoZ BloG on GitHub](https://github.com/leoz/blog.github.com)
