@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/leoz/blog.github.com.svg?branch=source)](https://travis-ci.org/leoz/blog.github.com)
+[![Build Status](https://travis-ci.com/leoz/blog.github.com.svg?branch=source)](https://travis-ci.com/leoz/blog.github.com)
 
 # blog.github.com
 
