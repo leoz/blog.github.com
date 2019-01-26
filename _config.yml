@@ -79,7 +79,7 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://__GITHUB_TOKEN__@github.com/user/blog.git
+  repo: https://__GITHUB_TOKEN__@github.com/leoz/blog.github.com.git
   branch: master
 
 # CodePen
