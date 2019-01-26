@@ -1,6 +1,12 @@
 language: node_js
+
 node_js:
   - stable
+
+cache:
+  directories:
+    - node_modules
+
 branches:
   only:
     - source
@@ -12,4 +18,12 @@ before_script:
   - git config --global user.email "leoz@yahoo.com"
   - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 
-script: npm run build
+script:
+  - hexo generate
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: sh deploy.sh
+  on:
+    branch: source
