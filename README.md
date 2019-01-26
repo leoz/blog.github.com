@@ -1,2 +1,2 @@
 # blog.github.com
-LeoZ BloG
+[LeoZ BloG](http://blog.leoz.net/)
