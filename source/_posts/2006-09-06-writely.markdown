@@ -1,0 +1,39 @@
+---
+author: leoz
+comments: true
+date: 2006-09-06 10:57:32+00:00
+layout: post
+slug: writely
+title: Writely
+wordpress_id: 12
+categories:
+- web20
+---
+
+{% raw %}
+<p><font size="7"><span style="font-weight: bold; color: rgb(255,102,0)">Try WEB 2.0 editor!</span></font></p>
+<p><font size="7"><span style="font-weight: bold; color: rgb(255,102,0)"></span></font></p>
+<p><font style="font-weight: bold; color: rgb(102,255,153); font-family: century gothic" size="5">Why?</p>
+<p></font>
+<ol>
+<li style="font-weight: bold; color: rgb(51,255,51); font-family: arial narrow"><font style="color: rgb(102,255,153)" size="6">It&#8217;s cool!</font>
+<li style="font-weight: bold; color: rgb(51,255,51); font-family: arial narrow"><font style="color: rgb(102,255,153)" size="6">It&#8217;s free.</font>
+<li style="font-weight: bold; color: rgb(51,255,51); font-family: arial narrow"><font style="color: rgb(102,255,153)" size="6">It&#8217;s possible to post to your own blog from it.</font><span style="font-weight: bold"><font style="font-weight: bold; color: rgb(51,204,255)" size="4"><span style="font-family: verdana"></span></font></span> </li>
+</ol>
+<p><span style="font-weight: bold"><font style="font-weight: bold; color: rgb(51,204,255)" size="4"><span style="font-family: verdana">
+<p></span></font></span><font style="font-weight: bold; color: rgb(51,204,255); font-family: verdana" size="4"><font size="5">Get it here: </font></font><font style="font-weight: bold; font-family: verdana" size="5"><span style="color: rgb(51,204,255)"></span><a title="writely editor" style="color: rgb(51,204,255)" href="http://www.writely.com">Writely</a></font> </p>
+{% endraw %}
+
+<!--more-->
+
+{% raw %}
+<p>
+<a class="fancybox" href="/uploads/2006/09/Writely.jpg" title="Writely">
+	<img src="/uploads/2006/09/Writely.jpg" alt="Writely" height="195" width="320">
+</a>
+</p>
+{% endraw %}
+
+This blog post was made from Writely and later corrected with MS Windows Live Writer.
+
+P.S. I will not recommend it for everyday use. It has lots of problems and it's still beta quality.
