@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="LeoZ BloG">
 <meta property="og:description" content="This is a step list explaining how to implement a newHTML attributefor WebKit.I’m going to useQtWebKitfor this execise but this approach is generic enough to be used for any other backend.Here is a no">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-14T00:50:11.507Z">
+<meta property="og:updated_time" content="2019-05-11T01:12:57.480Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WebKit new attribute cheat sheet">
 <meta name="twitter:description" content="This is a step list explaining how to implement a newHTML attributefor WebKit.I’m going to useQtWebKitfor this execise but this approach is generic enough to be used for any other backend.Here is a no">
@@ -164,37 +164,49 @@
             
         </h1>
         <div class="content">
-            <p>This is a step list explaining how to implement a new<br><a href="http://en.wikipedia.org/wiki/HTML_attribute" target="_blank" rel="noopener">HTML attribute</a><br>for WebKit.<br>I’m going to use<br><a href="http://trac.webkit.org/wiki/QtWebKit" target="_blank" rel="noopener">QtWebKit</a><br>for this execise but this approach is generic enough to be used for any other backend.<br><a href="!--￼12--&gt;2013/08/30/qtwebkit-building-cheat-sheet">Here is a note for building Qt and QtWebKit on Ubuntu Linux.</a></p>
+            <p>This is a step list explaining how to implement a new<br><a href="http://en.wikipedia.org/wiki/HTML_attribute" target="_blank" rel="noopener">HTML attribute</a><br>for WebKit.<br>I’m going to use<br><a href="http://trac.webkit.org/wiki/QtWebKit" target="_blank" rel="noopener">QtWebKit</a><br>for this execise but this approach is generic enough to be used for any other backend.<br><a href="2013/08/30/qtwebkit-building-cheat-sheet">Here is a note for building Qt and QtWebKit on Ubuntu Linux.</a></p>
 <a id="more"></a>
+
 <p>First, check if we could build WebKit and test the build with MiniBrowser.</p>
-<p><strong> Build WebKit </strong></p>
+<p>** Build WebKit **</p>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-built_in">cd</span> ~/Projects/qt_build/qt5/qtwebkit</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><strong> Test WebKit </strong> </p>
+
+<p>** Test WebKit ** </p>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-built_in">cd</span> ~/Projects/qt_build/qt5/qtwebkit/Tools/MiniBrowser/qt</span><br><span class="line">qmake</span><br><span class="line">make</span><br><span class="line"><span class="hljs-built_in">cd</span> ~/Projects/qt_build/qt5/qtwebkit/bin</span><br><span class="line">./MiniBrowser</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>Now let’s start implementing the new attribute.<br>I’m going to add this new attribute to<br><a href="http://www.w3.org/wiki/HTML/Elements/object" target="_blank" rel="noopener">the HTML object element</a></p>
 <p>The code we are going to modify lives here:<br><a href="https://github.com/WebKit/webkit/tree/master/Source/WebCore/html" target="_blank" rel="noopener">Source/WebCore/html</a></p>
-<p><strong> Add token for the new attribute </strong></p>
+<p>** Add token for the new attribute **</p>
 <p>In file<br><a href="https://github.com/WebKit/webkit/blob/master/Source/WebCore/html/HTMLAttributeNames.in" target="_blank" rel="noopener">HTMLAttributeNames.in</a><br>add line:</p>
 <figure class="highlight c hljs"><figcaption><span>++</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">altsrc</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><strong> Add rule for the new attribute </strong></p>
+
+<p>** Add rule for the new attribute **</p>
 <p>In file<br><a href="https://github.com/WebKit/webkit/blob/master/Source/WebCore/html/HTMLObjectElement.idl" target="_blank" rel="noopener">HTMLObjectElement.idl</a><br>add line:</p>
 <figure class="highlight c hljs"><figcaption><span>++</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[Reflect, URL] attribute DOMString altsrc;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><strong> Add code to support the new attribute </strong></p>
+
+<p>** Add code to support the new attribute **</p>
 <p>In file<br><a href="https://github.com/WebKit/webkit/blob/master/Source/WebCore/html/HTMLObjectElement.h" target="_blank" rel="noopener">HTMLObjectElement.h</a><br>add:</p>
 <figure class="highlight c hljs"><figcaption><span>++</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setAltSrcAttr</span><span class="hljs-params">(<span class="hljs-keyword">const</span> String&amp;)</span></span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>In file<br><a href="https://github.com/WebKit/webkit/blob/master/Source/WebCore/html/HTMLObjectElement.cpp" target="_blank" rel="noopener">HTMLObjectElement.cpp</a><br>add a new method HTMLObjectElement::setAltSrcAttr :</p>
 <figure class="highlight c hljs"><figcaption><span>++</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">void</span> HTMLObjectElement::setAltSrcAttr(<span class="hljs-keyword">const</span> String&amp; value)</span><br><span class="line">&#123;</span><br><span class="line">	dataLogF(<span class="hljs-string">"alt src is: %s\n"</span>, value.utf8().data());</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>and change HTMLObjectElement::parseAttribute method to support the new attribute:</p>
 <figure class="highlight c hljs"><figcaption><span>++</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">void</span> HTMLObjectElement::parseAttribute(<span class="hljs-keyword">const</span> QualifiedName&amp; name,</span><br><span class="line">                                       <span class="hljs-keyword">const</span> AtomicString&amp; value)</span><br><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (name == altsrcAttr)</span><br><span class="line">        setAltSrcAttr(value);</span><br><span class="line"></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><strong> Test </strong></p>
+
+<p>** Test **</p>
 <p>Create a new file index.html</p>
 <figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">object</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">data</span>=<span class="hljs-string">"helloworld.swf"</span> <span class="hljs-attr">altsrc</span>=<span class="hljs-string">"myfile.bmp"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">object</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>and place it somewhere</p>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ls ~/Projects/html/index.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>Build and install WebKit with all our changes.</p>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>Run MiniBrowser.</p>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-built_in">cd</span> ~/Projects/qt_build/qt5/qtwebkit/bin</span><br><span class="line">./MiniBrowser ../../../../html/index.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>You should see this console output:</p>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">alt src is: myfile.bmp</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -283,6 +295,19 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-11T01:05:34.000Z">2019-05-10</time></div>
+                    <a href="/2019/05/11/Jobs-in-Plantation-Sunnyvale-and-Toronto/" class="has-link-black-ter is-size-6">Jobs in Plantation, Sunnyvale and Toronto</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-02-13T13:41:37.000Z">2019-02-13</time></div>
                     <a href="/2019/02/13/Recent-NPM-packages/" class="has-link-black-ter is-size-6">Recent NPM packages</a>
                     <p class="is-size-7 is-uppercase">
@@ -326,19 +351,6 @@
                     <a href="/2014/03/25/jquery-mobile-bits/" class="has-link-black-ter is-size-6">jQuery Mobile bits</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/javascript/">javascript</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2013-09-02T17:08:00.000Z">2013-09-02</time></div>
-                    <a href="/2013/09/02/places-of-summer/" class="has-link-black-ter is-size-6">Places of summer</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/places/">places</a>
                     </p>
                 </div>
             </div>
@@ -455,6 +467,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/job-MagicLeap/">
+                        <span class="tag">job, MagicLeap</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/linux/">
                         <span class="tag">linux</span>
                         <span class="tag is-grey">2</span>
@@ -543,6 +562,17 @@
             Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/02/">
@@ -857,7 +887,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        42
+                        43
                     </p>
                 </div>
             </div>
@@ -877,7 +907,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        25
+                        26
                     </p>
                 </div>
             </div>
@@ -933,7 +963,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/CodePen/" style="font-size: 10px;">CodePen</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/JavaScript/" style="font-size: 13.33px;">JavaScript</a> <a href="/tags/N900/" style="font-size: 10px;">N900</a> <a href="/tags/browser/" style="font-size: 20px;">browser</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo-jekyll/" style="font-size: 10px;">hexo, jekyll</a> <a href="/tags/hiring/" style="font-size: 10px;">hiring</a> <a href="/tags/internet/" style="font-size: 10px;">internet</a> <a href="/tags/isis/" style="font-size: 10px;">isis</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/jQuery-Mobile/" style="font-size: 10px;">jQuery Mobile</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/job/" style="font-size: 16.67px;">job</a> <a href="/tags/linux/" style="font-size: 13.33px;">linux</a> <a href="/tags/maemo/" style="font-size: 16.67px;">maemo</a> <a href="/tags/meego/" style="font-size: 10px;">meego</a> <a href="/tags/npm-JavaScript/" style="font-size: 10px;">npm, JavaScript</a> <a href="/tags/photo/" style="font-size: 20px;">photo</a> <a href="/tags/places/" style="font-size: 20px;">places</a> <a href="/tags/qt/" style="font-size: 10px;">qt</a> <a href="/tags/ubuntu/" style="font-size: 13.33px;">ubuntu</a> <a href="/tags/usa/" style="font-size: 13.33px;">usa</a> <a href="/tags/webkit/" style="font-size: 16.67px;">webkit</a> <a href="/tags/webos/" style="font-size: 10px;">webos</a>
+        <a href="/tags/CodePen/" style="font-size: 10px;">CodePen</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/JavaScript/" style="font-size: 13.33px;">JavaScript</a> <a href="/tags/N900/" style="font-size: 10px;">N900</a> <a href="/tags/browser/" style="font-size: 20px;">browser</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo-jekyll/" style="font-size: 10px;">hexo, jekyll</a> <a href="/tags/hiring/" style="font-size: 10px;">hiring</a> <a href="/tags/internet/" style="font-size: 10px;">internet</a> <a href="/tags/isis/" style="font-size: 10px;">isis</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/jQuery-Mobile/" style="font-size: 10px;">jQuery Mobile</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/job/" style="font-size: 16.67px;">job</a> <a href="/tags/job-MagicLeap/" style="font-size: 10px;">job, MagicLeap</a> <a href="/tags/linux/" style="font-size: 13.33px;">linux</a> <a href="/tags/maemo/" style="font-size: 16.67px;">maemo</a> <a href="/tags/meego/" style="font-size: 10px;">meego</a> <a href="/tags/npm-JavaScript/" style="font-size: 10px;">npm, JavaScript</a> <a href="/tags/photo/" style="font-size: 20px;">photo</a> <a href="/tags/places/" style="font-size: 20px;">places</a> <a href="/tags/qt/" style="font-size: 10px;">qt</a> <a href="/tags/ubuntu/" style="font-size: 13.33px;">ubuntu</a> <a href="/tags/usa/" style="font-size: 13.33px;">usa</a> <a href="/tags/webkit/" style="font-size: 16.67px;">webkit</a> <a href="/tags/webos/" style="font-size: 10px;">webos</a>
     </div>
 </div>
 
@@ -1126,7 +1156,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        42
+                        43
                     </p>
                 </div>
             </div>
@@ -1146,7 +1176,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        25
+                        26
                     </p>
                 </div>
             </div>
@@ -1202,7 +1232,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/CodePen/" style="font-size: 10px;">CodePen</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/JavaScript/" style="font-size: 13.33px;">JavaScript</a> <a href="/tags/N900/" style="font-size: 10px;">N900</a> <a href="/tags/browser/" style="font-size: 20px;">browser</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo-jekyll/" style="font-size: 10px;">hexo, jekyll</a> <a href="/tags/hiring/" style="font-size: 10px;">hiring</a> <a href="/tags/internet/" style="font-size: 10px;">internet</a> <a href="/tags/isis/" style="font-size: 10px;">isis</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/jQuery-Mobile/" style="font-size: 10px;">jQuery Mobile</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/job/" style="font-size: 16.67px;">job</a> <a href="/tags/linux/" style="font-size: 13.33px;">linux</a> <a href="/tags/maemo/" style="font-size: 16.67px;">maemo</a> <a href="/tags/meego/" style="font-size: 10px;">meego</a> <a href="/tags/npm-JavaScript/" style="font-size: 10px;">npm, JavaScript</a> <a href="/tags/photo/" style="font-size: 20px;">photo</a> <a href="/tags/places/" style="font-size: 20px;">places</a> <a href="/tags/qt/" style="font-size: 10px;">qt</a> <a href="/tags/ubuntu/" style="font-size: 13.33px;">ubuntu</a> <a href="/tags/usa/" style="font-size: 13.33px;">usa</a> <a href="/tags/webkit/" style="font-size: 16.67px;">webkit</a> <a href="/tags/webos/" style="font-size: 10px;">webos</a>
+        <a href="/tags/CodePen/" style="font-size: 10px;">CodePen</a> <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/JavaScript/" style="font-size: 13.33px;">JavaScript</a> <a href="/tags/N900/" style="font-size: 10px;">N900</a> <a href="/tags/browser/" style="font-size: 20px;">browser</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo-jekyll/" style="font-size: 10px;">hexo, jekyll</a> <a href="/tags/hiring/" style="font-size: 10px;">hiring</a> <a href="/tags/internet/" style="font-size: 10px;">internet</a> <a href="/tags/isis/" style="font-size: 10px;">isis</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/jQuery-Mobile/" style="font-size: 10px;">jQuery Mobile</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/job/" style="font-size: 16.67px;">job</a> <a href="/tags/job-MagicLeap/" style="font-size: 10px;">job, MagicLeap</a> <a href="/tags/linux/" style="font-size: 13.33px;">linux</a> <a href="/tags/maemo/" style="font-size: 16.67px;">maemo</a> <a href="/tags/meego/" style="font-size: 10px;">meego</a> <a href="/tags/npm-JavaScript/" style="font-size: 10px;">npm, JavaScript</a> <a href="/tags/photo/" style="font-size: 20px;">photo</a> <a href="/tags/places/" style="font-size: 20px;">places</a> <a href="/tags/qt/" style="font-size: 10px;">qt</a> <a href="/tags/ubuntu/" style="font-size: 13.33px;">ubuntu</a> <a href="/tags/usa/" style="font-size: 13.33px;">usa</a> <a href="/tags/webkit/" style="font-size: 16.67px;">webkit</a> <a href="/tags/webos/" style="font-size: 10px;">webos</a>
     </div>
 </div>
 
