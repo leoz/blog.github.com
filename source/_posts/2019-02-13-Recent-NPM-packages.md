@@ -1,7 +1,7 @@
 ---
 title: Recent NPM packages
 date: 2019-02-13 08:41:37
-tags: npm, JavaScript
+tags: [npm, JavaScript]
 ---
 
 I published some packages on NPM which could be useful for somebody working with XML-RPC API:
