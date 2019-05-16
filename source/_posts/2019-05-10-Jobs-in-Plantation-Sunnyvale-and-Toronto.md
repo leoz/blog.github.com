@@ -1,7 +1,7 @@
 ---
 title: "Jobs in Plantation, Sunnyvale and Toronto"
 date: 2019-05-10 21:05:34
-tags: job, MagicLeap
+tags: job, MagicLeap, joinmagicleap
 ---
 
 We are looking for Senior Software Engineers to join our Application Framework team in Plantation, Sunnyvale or Toronto.
