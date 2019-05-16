@@ -4,6 +4,7 @@ node_js:
   - stable
 
 cache:
+  yarn: true
   directories:
     - node_modules
 
@@ -11,7 +12,7 @@ branches:
   only:
     - source
 
-install: npm install
+install: yarn
 
 before_script:
   - git config --global user.name "Leonid Zolotarev"
